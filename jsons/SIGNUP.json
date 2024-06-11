@@ -1,0 +1,11 @@
+{
+    "name": "signup",
+    "name_gql": "signup",
+	"name_gql_desc" : "Name displayed in gql on front end, todo: pass that in be and fe generation, so its nice not MYTest with 3 capitals at begin",
+    "columns": {
+        "id" : {"type": "int", "be_no_model": 1, "test_val":0, "pk": 1, "fe_display_list": 1, "fe_display_form": 1},
+        "name": {"type": "char", "fe_gql_name":"name","length": "200", "fe_br": 1},
+        "password": {"type": "int","fe_gql_name":"userid", "length": "100"},
+        "confirmpassword": {"type": "int","fe_gql_name":"break", "length": "200", "fe_br": 1, "LAST_COLUMN": 1}
+      }
+}

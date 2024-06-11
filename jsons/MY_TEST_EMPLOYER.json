@@ -1,0 +1,13 @@
+{
+    "name": "MY_TEST_EMPLOYER",
+    "name_gql": "MYTestEmployer",
+	"name_gql_desc" : "Name displayed in gql on front end, todo: pass that in be and fe generation, so its nice not MYTest with 3 capitals at begin",
+    "columns": {
+        "id" : {"type": "int", "be_no_model": 1, "test_val":0, "pk": 1, "fe_display_list": 1, "fe_display_form": 1},
+        "name": {"type": "char", "length": "200", "fe_br": 1},
+        "address": {"type": "char", "length": "200"},
+        "email": {"type": "char", "length": "200", "fe_br": 1},
+        "phone": {"type": "char", "length": "200"},
+        "bank_id": {"type": "int", "fe_gql_name":"bankId", "fe_br": 1, "LAST_COLUMN": 1}
+    }
+}
